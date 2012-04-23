@@ -51,9 +51,22 @@
     <p>We have a few ideas about how to make Brackets:</p>
     <ol>
         <li><strong>Tools shoudn't get in your way.</strong> Rather than clutter your coding environment with floating panels, toolbars and icons, Brackets employs a new idea we're calling "Quick Edit". Quick Edit allows us to rip open the code editor and place context-specific tools inline.</li>
-        <li><strong>Works with your browser.</strong> WYSIWYG and what you won't see in Brackets is a "design view". That's because your favorite browser is the design view. Up until now your code lived in an editor and your design in the browser and you were stuck in the middle doign the save/reload dance. Brackets creates a live connection to your local browser. Not only can it push live updates to the browser as you code, it can also set breakpoints and help you debug your applications.</li>
+        <li><strong>Works with your browser.</strong> WYSIWYG and what you won't see in Brackets is a "design view". That's because your favorite browser is the design view. Until now your code lived in an editor and your design in the browser and you were stuck in the middle doign the save/reload dance. Brackets creates a live connection to your local browser. Not only can it push live updates to the browser as you code, it can also set breakpoints and help you debug your applications.</li>
         <li><strong>Do-It-Yourself.</strong> We wanted to see if we could build Brackets with HTML, JavaScript and CSS and it turns out we could! But this also means that <strong>you</strong> can build Brackets with HTML, JavaScript and CSS. Whether you are adding a new feature, fixing a bug or just hacking on Brackets for fun, you have all the skills you need to help us build the best code editor for the web.</li>
     </ol>
+</div>
+
+<div class="wrap">
+    <h2>How The Sausage Is Made</h2>
+    <p>The team at Adobe is practicing the <a href="http://en.wikipedia.org/wiki/Scrum_(development)">Scrum agile methodology</a>. We are currently working on a 12-business-day
+        sprint. At the end of each sprint we release a milestone build. What we work on in each sprint is determined by our product backlog. It's basically a collection
+        of stories/features that we're planning to build. We start small, then we iterate until the feature is complete.</p>
+    
+    <p>Rather than have some stale wiki page with a basic list of features, we are using Trello (from the awesome developers at FogCreek) to manage our backlog publicly. With
+    our public backlog you can see when we plan to work on and release a specific feature. If you think the priority is to low, you can create a Trello account and vote it up.
+    You can even participate in the commented discussion on how we deisgn the feature.</p>
+    
+    <p>We believe in agile and we believe that open source must be community driven. So expect priorities to change based on your input... and change a lot.</p>
 </div>
     
 <a class="scroll-point" name="contribute"></a>
@@ -61,8 +74,39 @@
 
 <div class="wrap">
     <h2 class="icon icon-contribute">Want to Hack on Brackets?</h2>
-    <p>Brackets lives on GitHub. If you want to fork us and start hacking away, just visit the repository. There are two GitHub projects. The core of the project is "Brackets". It's where you will find all the HTML, JavaScript and CSS that powers the application. There is another project called "brackets-app" that's a thin native wrapper that brings Brackets to the desktop.</p>
-	<p>If you want to submit back to the Brackets project, make sure you have read and signed the <a href="">Brackets CLA</a>. We're not a big fan of legal documents, but this one is important. We choose to release and develop Brackets under an <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a> so there are no limitations to where the code can go. To protect that freedom, we need to make sure the code you contribute is your own.</p>
+    <p>If you want to fork us and start hacking away, just visit our repositories on GitHub.</p>
+    
+    <p>There are two GitHub projects. The core of the project is <a href="https://github.com/adobe/brackets"><code>brackets</code></a>. It's where you will find all the HTML, JavaScript and CSS.
+        There is a second project called <a href="https://github.com/adobe/brackets-app"><code>brackets-app</code></a> that provides a thin native wrapper to bring Brackets to the desktop.</p>
+    
+    <p>Because we are building Brackets on open web standards we aren't limited to where Brackets can go. The desktop is just the first target for Brackets so we decided to
+        seperate the desktop wrapper from the core code base. You can probably imagine a few other brackets projects yet to be created like <code>brackets-embed</code> (for embedding into existing web applications)
+        and <code>brackets-tablet</code> (for developing on the go).</p>
+
+    <p><code><a href="https://github.com/adobe/brackets">brackets</a></code> is a submodule of <code><a href="https://github.com/adobe/brackets-app">brackets-app</a></code>.
+        You'll want to pull <code>brackets-app</code> directly from GitHub which will pull the submodule <code>brackets</code>. Working with git submodules can get a little complex
+        so we've provided a <a href="#">step-by-step guide</a>.
+    
+    <h3>How to Contribute to Brackets</h3>
+        
+	<p>If you want to submit back to the Brackets project, make sure you have read and signed the <a href="#">Brackets CLA</a>. We're not a big fan of legal documents, but
+        this one is important. We choose to release and develop Brackets under an <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a> so there are no limitations
+        to where the code can go and what you can do with it. To protect that freedom, we need to make sure the code you contribute is your own.</p>
+
+    <h3>Our Open Source Governance Model</h3>
+    <quote>"A little bit of chaos can save us a large amount of bureaucracy."</quote>
+    <p>Our plan is to start with a small lightweight governance model and grow into a more complex model (if needed).</p>
+    <ul>
+        <li>Contibutors fork the code on GitHub.</li>
+        <li>Contributors work on improvements and submit a pull request. We require a <a href="http://en.wikipedia.org/wiki/Contributor_License_Agreement">Contibutor License Agreement (CLA)</a> for all pull requests.</li>
+        <li>Project maintainers review and evaluate pull requests with each sprint.</li>
+        <ul>
+            <li>Small contributions (like bug fixes) will be accepted at review time.</li>
+            <li>Significant contributions (like big features) that need additional work will be added to the project backlog.</li>
+        </ul>
+        <li>To start, the development team at Adobe will be the sole project maintainers, but we need your help. If you submit at least 7 contributions and share our vision for Brackets we'll give you commit rights.</li>
+    </ul>
+
 </div>
 
 <div class="grid">
