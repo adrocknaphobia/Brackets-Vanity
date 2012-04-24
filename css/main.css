@@ -362,6 +362,7 @@ header nav .menu-dropdown {
 .wrap p, .wrap li {
   line-height: 30px;
   color: #666;
+  font-weight: 200;
 }
 .wrap p {
   margin: 5px 0;
