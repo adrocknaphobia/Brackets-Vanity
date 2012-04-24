@@ -12,6 +12,7 @@ a {
 }
 a:hover {
   color: #3689CC;
+  text-decoration: underline;
 }
 
 header {
@@ -360,6 +361,10 @@ header nav .menu-dropdown {
 }
 .wrap p, .wrap li {
   line-height: 24px;
+  color: #666;
+}
+.wrap p {
+  margin: 5px 0;
 }
 .callout {
   background: #eaeaea;
