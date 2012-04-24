@@ -154,7 +154,6 @@ hr
 #header
 {
 	background: #fff;
-	border-bottom: 1px solid #ddd;
 	height: 90px;
 	left: 0;
 	position: fixed;
@@ -163,7 +162,7 @@ hr
 }
 #header .shadow
 {
-	bottom: -3px;
+	bottom: -9px;
 	height: 9px;
 	left: 0;
 	position: absolute;
