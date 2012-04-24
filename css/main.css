@@ -43,7 +43,12 @@ header hgroup h1 {
   font-weight: 700;
   margin: 21px 0 0 0;
   letter-spacing: 0;
+  line-height: 60px;
 }
+hgroup h1 a, hgroup h1 a:hover {
+  color: #3C4042;
+}
+
 header hgroup h2 {
   font-size: 18px;
   font-weight: 200;
@@ -51,6 +56,10 @@ header hgroup h2 {
   color: #808080;
   padding: 0;
   letter-spacing: 0;
+}
+hgroup a, hgroup a:hover {
+  text-decoration: none;
+  color: #808080;
 }
 header nav {
   position: absolute;
