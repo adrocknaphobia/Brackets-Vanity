@@ -135,9 +135,9 @@ div.button,div.button:hover
 	position: relative;
 	width: 820px;
 }
-.grid
+.callout
 {
-	background: url(images/grid.png) #eeeeee 50% 0%;
+	background: #eaeaea;
 	padding: 32px 0;
 }
 hr
@@ -555,16 +555,6 @@ a.pt-about
 {
 	border: none;
 	margin: -100px 0 130px;
-}
-.corner,.quick-links .corner
-{
-	background: url(images/sprite.png) no-repeat;
-	background-position: 0 -808px;
-	height: 40px;
-	left: 0;
-	position: absolute;
-	top: -32px;
-	width: 40px;
 }
 .button-container.middle
 {
