@@ -5,10 +5,13 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 header {
-  width: 960px;
   height: 170px;
-  position: relative;
+  width: 100%;
+}
+header .site {
+  width: 960px;
   margin: 0 auto;
+  position: relative;
 }
 header hgroup {
   position: absolute;
@@ -44,6 +47,7 @@ header hgroup h2 {
   font-weight: 200;
   margin: -7px 0 0 4px;
   color: #808080;
+  padding: 0;
 }
 header nav {
   position: absolute;
@@ -71,6 +75,7 @@ header nav li a:hover {
   width: 100%;
   background: #eaeaea;
   position: relative;
+  margin: 170px 0 0 0;
 }
 #hero:before {
   position: absolute;
@@ -84,21 +89,6 @@ header nav li a:hover {
   width: 100%;
   height: 100%;
 }
-/*#hero .shadow:before {
-  width: 100%;
-  height: 9px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  z-index: 5;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.20)), to(rgba(0,0,0,0.00)));
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
-  background-image: -o-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
-  background-image: linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
-}*/
 #hero .shadow:after {
   width: 100%;
   height: 9px;
