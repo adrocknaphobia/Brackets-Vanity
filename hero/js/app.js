@@ -13,6 +13,7 @@
       $($('#hero li')[index]).addClass('selected');
       after = $('#hero .slide').slice(index + 1);
       after.addClass('after');
+      $('#hero .indicator').css('top', $(this).parent().position().top);
       return false;
     });
   });

@@ -120,6 +120,17 @@ header nav li a:hover {
   position: relative;
   margin: 0 auto;
 }
+#hero .indicator {
+  height: 38px;
+  width: 50%;
+  content: '';
+  background: #d0d5d5;
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  box-shadow: 0 -1px 0 #bdc2c2, 0 1px 0 #eef0f0;
+}
 #hero .slides {
   height: 100%;
   width: 710px;
@@ -157,7 +168,7 @@ header nav li a:hover {
 }
 #hero .slides .slide h3 {
   font-size: 24px;
-  font-weight: 200;
+  font-weight: normal;
 }
 #hero .slides .slide p {
   font-size: 18px;
