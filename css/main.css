@@ -165,6 +165,8 @@ header nav li a:hover {
 #hero .slides .slide h3,
 #hero .slides .slide p {
   position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
 }
 #hero .slides .slide h3 {
   font-size: 24px;
