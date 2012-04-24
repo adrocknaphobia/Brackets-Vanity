@@ -24,7 +24,8 @@ header hgroup {
   text-shadow: 0 1px 0 #fff;
 }
 header hgroup:before {
-  content: url("../images/brackets_logo.svg") no-repeat 0 0;
+  content: '';
+  background: url("../images/brackets_logo.svg") no-repeat 0 0;
   position: absolute;
   left: -110px;
   top: 10px;
@@ -41,6 +42,7 @@ header hgroup h1 {
   font-size: 60px;
   font-weight: 700;
   margin: 21px 0 0 0;
+  letter-spacing: 0;
 }
 header hgroup h2 {
   font-size: 18px;
@@ -48,6 +50,7 @@ header hgroup h2 {
   margin: -7px 0 0 4px;
   color: #808080;
   padding: 0;
+  letter-spacing: 0;
 }
 header nav {
   position: absolute;
