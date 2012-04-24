@@ -21,7 +21,7 @@ header hgroup {
   text-shadow: 0 1px 0 #fff;
 }
 header hgroup:before {
-  content: url("../img/brackets_logo.svg") no-repeat 0 0;
+  content: url("../images/brackets_logo.svg") no-repeat 0 0;
   position: absolute;
   left: -110px;
   top: 10px;
@@ -228,12 +228,13 @@ header nav li a:hover {
 }
 #hero nav ul {
   margin-top: 100px;
+  list-style: none;
 }
 #hero nav li {
   height: 38px;
   font-weight: 200;
   font-size: 18px;
-  background-image: url("../img/hero_bullet_sprites.svg");
+  background-image: url("../images/hero_bullet_sprites.svg");
   background-repeat: no-repeat;
   background-position: 18px 0;
   position: relative;

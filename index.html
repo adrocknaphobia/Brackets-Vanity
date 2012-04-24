@@ -5,8 +5,13 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <title>Brackets</title>
+        <!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> -->
         <link rel="stylesheet" type="text/css" href="master.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="js/smooth.pack.js" type="text/javascript"></script>
+        <script src="js/app.js"></script>
+        <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
 
@@ -33,15 +38,50 @@
 </div>
 <div class="header-placeholder"></div>
 
-<div class="grid leadin">
-    <div class="wrap">
-        <img src="images/brackets_256.png" alt="">
-        <ul class="text-block">
-            <li><h1><strong>Brackets</strong> is an <strong>open source</strong></h1></li>
-            <li><h1>code editor for the web</h1></li>
-            <li><h1>that <strong>doesn't</strong> suck.</h1></li>
-        </ul>
+<div id="hero">
+    <div class="indicator"></div>
+
+    <div class="site">
+        <div class="slides">
+            <div id="web-focused" class="slide selected">
+                <img src="images/slide_web-focused.svg" />
+                <h3>I heard you liked Web Development</h3>
+                <p>More than just a text editor; Brackets was made for web
+                development.</p>
+            </div>
+
+            <div id="innovative" class="slide after">
+                <img src="images/slide_innovative.png" />
+                <h3>Helpful without taking over</h3>
+                <p>With features like Live Development and Inline Editing, Brackets
+                streamlines development without getting in your way.</p>
+            </div>
+
+            <div id="standards-based" class="slide after">
+                <img src="images/slide_standards-based.svg" />
+                <h3>Built for web standards on web standards</h3>
+                <p>Brackets is built on HTML5, CSS3, &amp; JavaScript. It is ready
+                for the desktop, browser, and soon, mobile devices.</p>
+            </div>
+
+            <div id="extensible" class="slide after">
+                <img src="images/slide_extensible.svg" />
+                <h3>You complete me</h3>
+                <p>Missing something in Brackets? Extension support is coming
+                soon.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="selected"><a href="#web-focused">web focused</a></li>
+                <li><a href="#innovative">innovative</a></li>
+                <li><a href="#standards-based">standards based</a></li>
+                <li><a href="#extensible">extensible</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <div class="shadow"></div>
 </div>
 
 <a class="scroll-point pt-about" name="about"></a>

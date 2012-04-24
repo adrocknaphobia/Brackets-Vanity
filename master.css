@@ -1,3 +1,4 @@
+@import 'fonts/source-sans/stylesheet.css';
 *
 {
 	margin: 0;
@@ -38,7 +39,8 @@ body,a
 }
 body,h1,h2,h3,h4
 {
-	font-family: 'HelveticaNeue-Light',Helvetica,Arial,sans-serif;
+	font-family: 'SourceSans';
+  	-webkit-font-smoothing: subpixel-antialiased;
 	font-size: 17px;
 	font-weight: 300;
 }
