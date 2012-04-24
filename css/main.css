@@ -3,11 +3,41 @@ body {
   background: #f8f8f8;
   font-family: 'SourceSans';
   -webkit-font-smoothing: subpixel-antialiased;
+  color: #4D4D4D;
 }
+
+a {
+  color: #1C6EB0;
+  text-decoration: none;
+}
+a:hover {
+  color: #3689CC;
+}
+
 header {
   height: 170px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: #F8F8F8;
 }
+header .shadow
+{
+  bottom: -9px;
+  height: 9px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.20)), to(rgba(0,0,0,0.00)));
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
+  background-image: linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
+}
+
+
 header .site {
   width: 960px;
   margin: 0 auto;
@@ -82,6 +112,16 @@ header nav li a {
 header nav li a:hover {
   color: #1a1a1a;
 }
+header nav .menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 32px;
+  width: 40%;
+}
+.menu-dropdown select {
+  width: 100%;
+}
 #hero {
   height: 360px;
   width: 100%;
@@ -99,15 +139,10 @@ header nav li a:hover {
 }
 #hero .shadow {
   width: 100%;
-  height: 100%;
-}
-#hero .shadow:after {
-  width: 100%;
   height: 9px;
   position: absolute;
   bottom: 0;
   left: 0;
-  content: '';
   z-index: 5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.00)), to(rgba(0,0,0,0.20)));
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.00), rgba(0,0,0,0.20));
@@ -298,3 +333,38 @@ header nav li a:hover {
   color: #000;
   cursor: default;
 }
+
+.wrap {
+  width: 820px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.wrap ol, .wrap ul {
+  margin: 10px 0 0 30px;
+}
+
+.wrap li {
+  margin: 5px 0;
+}
+
+.wrap h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 10px 0px 10px 0px;
+}
+.wrap h3 {
+  font-size: 21px;
+  margin: 26px 0px 8px 0px;
+  font-weight: normal;
+}
+.wrap p, .wrap li {
+  line-height: 24px;
+}
+.callout {
+  background: #eaeaea;
+  padding: 32px 0;
+}
+
+
+
