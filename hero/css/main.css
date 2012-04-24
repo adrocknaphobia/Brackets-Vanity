@@ -73,6 +73,18 @@ header nav li a:hover {
   position: relative;
 }
 #hero:before {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #dfe2e2;
+  content: '';
+  right: 0;
+}
+#hero .shadow {
+  width: 100%;
+  height: 100%;
+}
+#hero .shadow:before {
   width: 100%;
   height: 9px;
   position: absolute;
@@ -86,7 +98,7 @@ header nav li a:hover {
   background-image: -ms-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
   background-image: linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
 }
-#hero:after {
+#hero .shadow:after {
   width: 100%;
   height: 9px;
   position: absolute;
@@ -100,13 +112,58 @@ header nav li a:hover {
   background-image: -ms-linear-gradient(top, rgba(0,0,0,0.00), rgba(0,0,0,0.20));
   background-image: linear-gradient(top, rgba(0,0,0,0.00), rgba(0,0,0,0.20));
 }
-#hero nav {
-  padding: 100px 0;
-  width: 250px;
-  background: #dfe2e2;
+#hero .site {
+  width: 960px;
+  height: 100%;
   position: relative;
   margin: 0 auto;
 }
+#hero .slides {
+  height: 100%;
+  width: 710px;
+  background: #eaeaea;
+}
+#hero nav {
+  background: #dfe2e2;
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+#hero nav ul {
+  margin-top: 70px;
+}
 #hero nav li {
-  height: 40px;
+  padding: 12px 0;
+  height: 16px;
+  font-weight: 200;
+  font-size: 18px;
+}
+#hero nav li a {
+  display: block;
+  text-shadow: 0 1px 0 #fff;
+  color: #777979;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  margin: 0 0 0 60px;
+}
+#hero nav li.selected {
+  background: #d0d5d5;
+  position: relative;
+}
+#hero nav li.selected:before {
+  content: '';
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #008000;
+  left: 0;
+  top: 10px;
+}
+#hero nav li.selected a {
+  text-shadow: 0 1px 1px rgba(0,0,0,0.30);
+  color: #000;
+  cursor: default;
 }

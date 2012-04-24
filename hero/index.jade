@@ -3,7 +3,7 @@ html
 	head
 		meta(charset = 'utf-8')
 		meta('http-equiv' = 'X-UA-Compatible', content = 'IE=edge,chrome=1')
-		title Basic Starter
+		title Brackets
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/reset.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/main.css')
 		script(src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
@@ -26,19 +26,21 @@ html
 					li
 						a Download
 		#hero
-			.slides
-				#web-focused.slide
-				#innovative.slide
-				#standards-based.slide
-				#extensible.slide
-			nav
-				ul
-					li
-						a web focused
-					li
-						a innovative
-					li
-						a standards based
-					li
-						a extensible
+			.site
+				.slides
+					#web-focused.slide
+					#innovative.slide
+					#standards-based.slide
+					#extensible.slide
+				nav
+					ul
+						li.selected
+							a(href='#') web focused
+						li
+							a(href='#') innovative
+						li
+							a(href='#') standards based
+						li
+							a(href='#') extensible
+			.shadow
 		footer
