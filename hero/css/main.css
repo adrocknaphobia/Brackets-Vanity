@@ -91,6 +91,7 @@ header nav li a:hover {
   top: 0;
   left: 0;
   content: '';
+  z-index: 5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.20)), to(rgba(0,0,0,0.00)));
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.20), rgba(0,0,0,0.00));
@@ -105,6 +106,7 @@ header nav li a:hover {
   bottom: 0;
   left: 0;
   content: '';
+  z-index: 5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.00)), to(rgba(0,0,0,0.20)));
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.00), rgba(0,0,0,0.20));
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.00), rgba(0,0,0,0.20));
@@ -122,11 +124,88 @@ header nav li a:hover {
   height: 100%;
   width: 710px;
   background: #eaeaea;
+  position: relative;
+  overflow: hidden;
 }
-#hero .slides > div {
+#hero .slides .slide {
+  position: absolute;
   width: 100%;
   height: 100%;
+  color: #4d4d4d;
+  -webkit-transition: top 0.25s ease-in-out;
+  background-color: #eaeaea;
+}
+#hero .slides .slide.before {
+  top: -100%;
+  left: 0;
+  z-index: 1;
+}
+#hero .slides .slide.selected {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+#hero .slides .slide.after {
+  top: 100%;
+  left: 0;
+  z-index: 2;
+}
+#hero .slides .slide img,
+#hero .slides .slide h3,
+#hero .slides .slide p {
   position: absolute;
+}
+#hero .slides .slide h3 {
+  font-size: 24px;
+  font-weight: 200;
+}
+#hero .slides .slide p {
+  font-size: 18px;
+  font-weight: 200;
+}
+#hero #web-focused h3 {
+  left: 430px;
+  top: 87px;
+  width: 185px;
+}
+#hero #web-focused p {
+  left: 430px;
+  top: 150px;
+  width: 220px;
+}
+#hero #innovative img {
+  left: 300px;
+  top: 2px;
+}
+#hero #innovative h3 {
+  left: 70px;
+  top: 88px;
+  width: 158px;
+}
+#hero #innovative p {
+  left: 70px;
+  top: 150px;
+  width: 220px;
+}
+#hero #standards-based h3 {
+  left: 370px;
+  top: 88px;
+  width: 240px;
+}
+#hero #standards-based p {
+  left: 370px;
+  top: 150px;
+  width: 280px;
+}
+#hero #extensible h3 {
+  left: 130px;
+  top: 108px;
+  width: 180px;
+}
+#hero #extensible p {
+  left: 130px;
+  top: 147px;
+  width: 220px;
 }
 #hero nav {
   background: #dfe2e2;

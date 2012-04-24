@@ -4,6 +4,7 @@ html
 		meta(charset = 'utf-8')
 		meta('http-equiv' = 'X-UA-Compatible', content = 'IE=edge,chrome=1')
 		title Brackets
+		link(rel="shortcut icon", type="image/x-icon", href="favicon.ico")
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/reset.css')
 		link(rel = 'stylesheet', type = 'text/css', href = 'css/main.css')
 		script(src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
@@ -28,10 +29,22 @@ html
 		#hero
 			.site
 				.slides
-					#web-focused.slide
-					#innovative.slide
-					#standards-based.slide
-					#extensible.slide
+					#web-focused.slide.selected
+						img(src = 'img/slide_web-focused.svg')
+						h3 I heard you liked Web Development
+						p More than just a text editor; Brackets was made for web development.
+					#innovative.slide.after
+						img(src = 'img/slide_innovative.png')
+						h3 Helpful without taking over
+						p With features like Live Development and Inline Editing, Brackets streamlines development without getting in your way.
+					#standards-based.slide.after
+						img(src = 'img/slide_standards-based.svg')
+						h3 Built for web standards on web standards
+						p Brackets is built on HTML5, CSS3, & JavaScript.  It is ready for the desktop, browser, and soon, mobile devices.
+					#extensible.slide.after
+						img(src = 'img/slide_extensible.svg')
+						h3 You complete me
+						p Missing something in Brackets?  Extension support is coming soon.
 				nav
 					ul
 						li.selected
