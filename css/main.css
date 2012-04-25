@@ -350,9 +350,30 @@ header nav .menu-dropdown {
 }
 
 .wrap h2 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: normal;
   margin: 10px 0px 10px 0px;
+}
+h2.icon {
+  padding: 8px 0 0 55px;
+  background-image: url('../images/icons_sprite.svg');
+  background-repeat: no-repeat;
+  height: 40px;
+}
+h2.icon-about {
+  background-position: 0 0;
+}
+h2.icon-contribute {
+  background-position: 0 -48px;
+}
+h2.icon-mailing-list {
+  background-position: 0 -96px;
+}
+h2.icon-download {
+  background-position: 0 -144px;
+}
+h2.icon-quick-links {
+  background-position: 0 -192px;
 }
 .wrap h3 {
   font-size: 21px;
