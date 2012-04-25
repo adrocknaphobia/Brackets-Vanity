@@ -115,10 +115,6 @@ header nav li a:hover {
 }
 header nav .menu-dropdown {
   display: none;
-  position: absolute;
-  right: 16px;
-  top: 32px;
-  width: 40%;
 }
 .menu-dropdown select {
   width: 100%;
@@ -214,6 +210,12 @@ header nav .menu-dropdown {
   font-size: 18px;
   font-weight: 200;
 }
+#hero #web-focused img {
+  left: 124px;
+  top: 36px;
+  width: 280px;
+  height: 288px;
+}
 #hero #web-focused h3 {
   left: 430px;
   top: 87px;
@@ -227,6 +229,8 @@ header nav .menu-dropdown {
 #hero #innovative img {
   left: 300px;
   top: 2px;
+  height: 354px;
+  width: 408px;
 }
 #hero #innovative h3 {
   left: 70px;
@@ -238,6 +242,12 @@ header nav .menu-dropdown {
   top: 150px;
   width: 220px;
 }
+#hero #standards-based img {
+  left: 45px;
+  top: 34px;
+  width: 371px;
+  height: 293px;
+}
 #hero #standards-based h3 {
   left: 430px;
   top: 88px;
@@ -247,6 +257,12 @@ header nav .menu-dropdown {
   left: 430px;
   top: 150px;
   width: 220px;
+}
+#hero #extensible img {
+  left: 377px;
+  top: 79px;
+  width: 278px
+  height 202px;
 }
 #hero #extensible h3 {
   left: 130px;
