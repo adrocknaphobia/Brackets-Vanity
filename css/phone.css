@@ -1,0 +1,94 @@
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+html {
+	width: 100%;
+	overflow-x: hidden;
+}
+header {
+	position: relative;
+	height: 100px;
+}
+body > header hgroup {
+	top: 10px;
+	left: 35px;
+}
+header hgroup {
+	width: 100%;
+}
+header hgroup h1 {
+	font-size: 24px;
+	line-height: 30px;
+	position: relative;
+	left: 60px;
+	width: 200px;
+}
+header hgroup h2 {
+	font-size: 14px;
+	margin: -5px 0 0 2px;
+	position: relative;
+	left: 60px;
+	width: 220px;
+}
+header nav .menu-dropdown {
+  display: inline-block;
+  float: right;
+  top: -20px;
+  right: 10px;
+  position: relative;
+}
+header nav ul {
+	display: none;
+}
+#hero {
+	display: none;
+}
+header hgroup:before {
+	width: 50px;
+	height: 50px;
+	background-size: 50px 50px;
+	-webkit-border-radius: 10px;
+ 	-moz-border-radius: 10px;
+ 	border-radius: 10px;
+ 	left: 0px;
+  	top: -5px !important;
+}
+ul.list.mailing-list {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+ul.list.mailing-list li {
+	width: 100%;
+	clear: both;
+	padding: 0 0 5px 5px;
+}
+ul.list.mailing-list li a {
+	display: block;
+	width: 90%;
+	font-size: 12px;
+	padding: 4px;
+	text-align: right;
+	left: 0;
+	margin: 0 auto;
+}
+ul.list.mailing-list li strong {
+	width: auto;
+	display: block;
+	width: 100%;
+}
+.list-header {
+	clear: both;
+}
+.wrap h2 {
+	font-size: 22px;
+}
+.wrap h3 {
+	font-size: 18px;
+}
+h2.icon {
+	font-size: 24px;
+	padding: 10px 0 0 55px;
+}
