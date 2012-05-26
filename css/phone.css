@@ -72,28 +72,17 @@ h2.icon {
 	padding: 10px 0 0 55px;
 }
 
+.list.mailing-list li {
+    background-color: white;
+}
+.list.mailing-list li, .list.mailing-list li strong, .list.mailing-list li a {
+    width: 195px;
+}
+.list.mailing-list li strong { display: none; }
+
 /* zocial button */
 button.zocial
 {
     width: 175px;
     font-size: 9px;
 }
-
-/*
-.zocial {
-	overflow: hidden;
-	max-width: 2.4em;
-	padding-left: 0;
-	padding-right: 0;
-	max-height: 2.15em;
-	white-space: nowrap;
-}
-.zocial::before {
-	padding: 0;
-	width: 2em;
-	height: 2em;
-	
-	box-shadow: none;
-	border: none;
-}
-*/
