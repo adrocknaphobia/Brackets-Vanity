@@ -93,3 +93,9 @@ body > header nav {
 #hero nav li.selected:nth-child(4) {
   background-position: 4px -240px !important;
 }
+
+/* fork us on github */
+#fork-us
+{
+    display: none;   
+}

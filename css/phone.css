@@ -2,10 +2,13 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 }
+
 html {
 	width: 100%;
 	overflow-x: hidden;
 }
+
+/*@import you mom is cool*/
 header {
 	position: relative;
 	height: 100px;
@@ -54,31 +57,7 @@ header hgroup:before {
  	left: 0px;
   	top: -5px !important;
 }
-ul.list.mailing-list {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	clear: both;
-}
-ul.list.mailing-list li {
-	width: 100%;
-	clear: both;
-	padding: 0 0 5px 5px;
-}
-ul.list.mailing-list li a {
-	display: block;
-	width: 90%;
-	font-size: 12px;
-	padding: 4px;
-	text-align: right;
-	left: 0;
-	margin: 0 auto;
-}
-ul.list.mailing-list li strong {
-	width: auto;
-	display: block;
-	width: 100%;
-}
+
 .list-header {
 	clear: both;
 }
@@ -92,3 +71,29 @@ h2.icon {
 	font-size: 24px;
 	padding: 10px 0 0 55px;
 }
+
+/* zocial button */
+button.zocial
+{
+    width: 175px;
+    font-size: 9px;
+}
+
+/*
+.zocial {
+	overflow: hidden;
+	max-width: 2.4em;
+	padding-left: 0;
+	padding-right: 0;
+	max-height: 2.15em;
+	white-space: nowrap;
+}
+.zocial::before {
+	padding: 0;
+	width: 2em;
+	height: 2em;
+	
+	box-shadow: none;
+	border: none;
+}
+*/

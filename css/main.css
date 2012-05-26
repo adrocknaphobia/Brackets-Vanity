@@ -1,10 +1,11 @@
-@import '../fonts/source-sans/stylesheet.css';
 body {
   background: #f8f8f8;
   font-family: 'SourceSans';
   -webkit-font-smoothing: subpixel-antialiased;
   color: #4D4D4D;
 }
+
+@import '../fonts/source-sans/stylesheet.css';
 
 a {
   color: #1C6EB0;
@@ -20,7 +21,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   background: #F8F8F8;
 }
 header .shadow

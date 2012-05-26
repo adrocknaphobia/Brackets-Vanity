@@ -8,9 +8,13 @@
         <title>Brackets</title>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!--- 3rd-party stylesheets --->
+        <link rel="stylesheet" type="text/css" href="css/zocial/zocial.css" />
+        <!--- responsive --->
         <link rel="stylesheet" media="screen and (max-width: 960px)" href="css/tablet.css" />
         <link rel="stylesheet" media="screen and (max-width: 710px)" href="css/phone.css" />
-
+        <link rel="stylesheet" type="text/css" href="fonts/source-sans/stylesheet.css" />
+        <!--- 3rd-party scripts --->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="js/smooth.pack.js" type="text/javascript"></script>
         <script src="js/app.js"></script>
@@ -18,11 +22,11 @@
 </head>
 <body>
 
-
-
-
 <a class="scroll-point pt-top" name="top"></a>
 <header>
+    <!--- fork us on github --->
+    <a href="https://github.com/adobe/brackets"><img id="fork-us" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
     <a class="scroll-point pt-top" name="top"></a>
     <div class="site">
         <hgroup>
@@ -32,16 +36,17 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#checkit">Check It Out</a></li>
                 <li><a href="#contribute">Contribute</a></li>
-                <li><a href="#mailing-list">Mailing List</a></li>
-                <li><a href="#download">Download</a></li>
+                <li><a href="#mailing-list">Stay Informed</a></li>
+                
             </ul>
             <form class="menu-dropdown">
                 <select onchange="location = this.options[this.selectedIndex].value;">
                     <option value="#about">About</option>
+                    <option value="#checkit">Check It Out</option>
                     <option value="#contribute">Contribute</option>
-                    <option value="#mailing-list">Mailing List</option>
-                    <option value="#download">Download</option>
+                    <option value="#mailing-list">Stay Informed</option>
                 </select>
             </form>
         </nav>
@@ -54,40 +59,39 @@
 
     <div class="site">
         <div class="slides">
-            <div id="web-focused" class="slide selected">
+            <div id="standards-based" class="slide selected">
+                <img src="images/slide_standards-based.svg" />
+                <h3>Built <strong>with</strong> the web<br><strong>for</strong> the web.</h3>
+                <p>Made with <span style="color:darkred;">♥</span> and JavaScript. Brackets is a fully open source project, with an active and
+                growing development community.</p>
+            </div>
+            
+            <div id="web-focused" class="slide after">
                 <img src="images/slide_web-focused.svg" />
-                <h3>A Code Editor</br>For The Web</h3>
-                <p>More than just a text editor; Brackets is optimized for web
-                development. It's optimized for you.</p>
+                <h3>A code editor<br>for the web</h3>
+                <p>Brackets is built from the ground up with a focus on web development.</p>
+            </div>
+            
+            <div id="extensible" class="slide after">
+                <img src="images/slide_extensible.svg" />
+                <h3>You complete me</h3>
+                <p>Brackets is built with HTML, JavaScript and CSS, with ongoing
+                development of a full extensibility API. Extend it in any direction you want.</p>
             </div>
 
             <div id="innovative" class="slide after">
                 <img src="images/slide_innovative.png" />
                 <h3>Helpful without taking over</h3>
-                <p>With features like Live Development and Quick Edit, Brackets
-                streamlines development without getting in your way.</p>
-            </div>
-
-            <div id="standards-based" class="slide after">
-                <img src="images/slide_standards-based.svg" />
-                <h3>Built for web standards <strong>on</strong> web standards</h3>
-                <p>Brackets is built on HTML, CSS3, &amp; JavaScript. You can use
-                Brackets to build Brackets.</p>
-            </div>
-
-            <div id="extensible" class="slide after">
-                <img src="images/slide_extensible.svg" />
-                <h3>You complete me</h3>
-                <p>Missing something in Brackets? Extension support is coming
-                soon.</p>
+                <p>With features like Live Development and Quick Edit, Brackets streamlines development
+                without getting in your way.</p>
             </div>
         </div>
         <nav>
             <ul>
-                <li class="selected"><a href="#web-focused">focused</a></li>
-                <li><a href="#innovative">different</a></li>
-                <li><a href="#standards-based">open</a></li>
+                <li class="selected"><a href="#standards-based">open</a></li>
+                <li><a href="#web-focused">focused</a></li>
                 <li><a href="#extensible">extensible</a></li>
+                <li><a href="#innovative">different</a></li>
             </ul>
         </nav>
     </div>
@@ -98,63 +102,33 @@
 <a class="scroll-point pt-about" name="about"></a>
 <div class="wrap">
     <h2 class="icon icon-about">About Brackets</h2>
-	<p>Brackets is a new experimental code editor for the next generation of web developers and designers. It is optimized for <strong>HTML</strong>, <strong>JavaScript</strong>, <strong>CSS</strong> and related web technologies. It's also <strong>built</strong> on HTML, CSS and JavaScript!</p>
-    <h3>Our Ideas</h3>
-    <ol>
-        <li><strong>Tools shoudn't get in your way.</strong> Rather than clutter your coding environment with floating panels, toolbars and icons, Brackets employs a new idea we're calling "Quick Edit". Quick Edit allows us to rip open the code editor and place context-specific tools inline.</li>
-        <li><strong>Works with your browser.</strong> WYSIWYG and what you won't see in Brackets is a "design view". That's because your favorite browser is the design view. Until now your code lived in an editor and your design in the browser and you were stuck in the middle doign the save/reload dance. Brackets creates a live connection to your local browser. Not only can it push live updates to the browser as you code, it can also set breakpoints and help you debug your applications.</li>
-        <li><strong>Do-It-Yourself.</strong> We wanted to see if we could build Brackets with HTML, JavaScript and CSS and it turns out we could! But this also means that <strong>you</strong> can build Brackets with HTML, JavaScript and CSS. Whether you are adding a new feature, fixing a bug or just hacking on Brackets for fun, you have all the skills you need to help us build the best code editor for the web.</li>
-    </ol>
-
-    <h2>How We Build Brackets</h2>
-    <p>The team at Adobe is practicing the <a href="http://en.wikipedia.org/wiki/Scrum_(development)">Scrum agile methodology</a>. We are currently working on a 12-business-day
-        sprint. At the end of each sprint we release a milestone build. What we work on in each sprint is determined by our product backlog. The backlog is basically a collection
-        of stories/features that we're planning to build. We start small, then we iterate until the feature is complete.</p>
+	<p>Brackets is an open source project code editor for web developers and designers which is optimized for HTML, JavaScript and CSS development. It is built using web technologies, which makes it easy for any web developer to contribute to and extend the functionality of the editor.</p>
+    <h3>Guiding Ideas:</h3>
+    <ul>
+        <li><strong>For the web community, by the web community</strong> Brackets is built on top of web technologies which means that if you can code in Brackets, you can code on Brackets? Want a feature? Use HTML, CSS and JavaScript to add it!</li>
+        <li><strong>Open Development Works</strong> While Adobe provides dedicated resources to Brackets, it is a fully open source, community driven project. Want to influence its direction? Join the developer list and start participating.</li>
+        <li><strong>Tools Shouldn’t Get in Your Way</strong> Rather than clutter your development environment with floating panels, toolbars and icons, Brackets focuses on providing “Quick Edit” in-line views that provide context sensitive access to your content, without taking you away from your code.</li>
+        <li><strong>Works with your browser</strong> The browser is your design view. Brackets hooks up directly to the developer tools within your browser, allowing you to develop in the same environment you will deploy in.</li>
+    </ul>
+</div>
     
-    <p>Rather than use some stale wiki page with a basic list of features, we are using <a href="https://trello.com/board/brackets/4f90a6d98f77505d7940ce88">Trello</a> (from the awesome developers at FogCreek) to manage
-        <a href="https://trello.com/board/brackets/4f90a6d98f77505d7940ce88">our backlog publicly</a>. With our public backlog you can see everything we are planning to work on
-        and when it will be released. If you think the priority is to low, you can create a Trello account and vote it up. You can even participate in the commented
-        discussion on how we deisgn the feature.</p>
-    
-    <p>We believe in agile and we believe that open source must be community driven. So expect priorities to change based on your input.</p>
+<a class="scroll-point pt-about" name="checkit"></a>
+<div class="wrap">
+    <h2 class="icon icon-download">Check It Out</h2>
+	<p>Brackets is still in the oven and needs to bake a little longer before it's a full-featured code editor. The milestone builds available on GitHub are there for contributors and those special kind of crazy developers who love to live on the edge. Performance, stability and features are all in flux. Use at your own risk.</p>
+    <p>However, if you like living on the bleeding edge, just view the <a href="https://github.com/adobe/brackets/blob/master/README.md">README</a> file for info on how to download and run Brackets.</p>
 </div>
     
 <a class="scroll-point" name="contribute"></a>
-
 <div class="wrap">
-    <h2 class="icon icon-contribute">Ready to Hack on Brackets?</h2>
-    <p>If you want to fork us and start hacking away, just visit our repositories on GitHub.</p>
-    
-    <p>There are two GitHub projects. The core of the project is <a href="https://github.com/adobe/brackets"><code>brackets</code></a>. It's where you will find all the HTML, JavaScript and CSS.
-        There is a second project called <a href="https://github.com/adobe/brackets-app"><code>brackets-app</code></a> that provides a thin native wrapper to bring Brackets to the desktop.</p>
-    
-    <p>Because we are building Brackets on open web standards we aren't limited to where Brackets can go. The desktop is just the first target for Brackets so we decided to
-        seperate the desktop wrapper from the core code base. You can probably imagine a few other brackets projects yet to be created like <code>brackets-embed</code> (for embedding into existing web applications)
-        and <code>brackets-tablet</code> (for developing on the go).</p>
-
-    <p><code><a href="https://github.com/adobe/brackets">brackets</a></code> is a submodule of <code><a href="https://github.com/adobe/brackets-app">brackets-app</a></code>.
-        You'll want to pull <code>brackets-app</code> directly from GitHub which will pull the submodule <code>brackets</code>. Working with git submodules can get a little complex
-        so we've provided a <a href="#">step-by-step guide</a>.</p>
-
-    <h3>Want to Contribute?</h3>
-    
-    <quote>"A little bit of chaos can save a large amount of bureaucracy."</quote>
-        
-	<p>If you want to submit back to the Brackets project, make sure you have read and signed the <a href="#">Brackets CLA</a>. We're not a big fan of legal documents, but
-        this one is important. We choose to release and develop Brackets under an <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a> so there are no limitations
-        to where the code can go and what you can do with it. To protect that freedom, we need to make sure the code you contribute is your own.</p>
-    
-    <p>Beyond simple contributions, we are starting with a small lightweight governance model and will grow into a more complex model (if needed).</p>
+    <h2 class="icon icon-contribute">Contribute</h2>
+    <p>If you have an idea for a feature, want to fix a bug, or otherwise just contribute, then fork the project and start hacking.</p>
     <ul>
-        <li>Contibutors fork the code on GitHub.</li>
-        <li>Contributors work on improvements and submit a pull request. We require a <a href="http://en.wikipedia.org/wiki/Contributor_License_Agreement">Contibutor License Agreement (CLA)</a> for all pull requests.</li>
-        <li>Project maintainers review and evaluate pull requests with each sprint.</li>
-        <ul>
-            <li>Small contributions (like bug fixes) will be accepted at review time.</li>
-            <li>Significant contributions (like big features) that need additional work will be added to the project backlog.</li>
-        </ul>
-        <li>To start, the development team at Adobe will be the sole project maintainers, but we need your help. If you submit at least 7 contributions and share our vision for Brackets we'll give you commit rights.</li>
-    </ul>    
+        <li><a href="https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets">How To Hack on Brackets</a></li>
+        <li><a href="http://groups.google.com/group/brackets-dev">Developer List</a></li>
+        <li><a href="https://github.com/adobe/brackets/issues">Current Issues</a></li>
+        <li><a href="http://bit.ly/BracketsBacklog">Development Roadmap</a></li>
+    </ul>
 </div>
 
 <a class="scroll-point" name="mailing-list"></a>
@@ -167,52 +141,42 @@
         chat directly with the team on IRC.</p>
 	</div>
 	<ul class="list mailing-list">
-		<li><strong>Brackets-Dev</strong> <a href="http://groups.google.com/group/brackets-dev">http://groups.google.com/group/brackets-dev<span></span></a></li>
-        <li><strong>IRC Channel</strong> <a href="http://freenode.net">#brackets on freenode<span></span></a></li>
+		<li><strong>Source Code</strong> <a href="http://www.github.com/adobe/brackets"><button class="zocial github">Fork us on github</button></a></li>
+        <li><strong>Mailing List</strong> <a href="http://groups.google.com/group/brackets-dev"><button class="zocial email">Join the discussion</button></a></li>
+        <li><strong>IRC</strong> <a href="http://webchat.freenode.net/?channels=brackets"><button class="zocial guest">#brackets on freenode.net</button></a></li>
 	</ul>
 	<div class="list-header">
 		<strong>For Users</strong>
 		<p>Brackets isn't ready for general use. Follow us and you'll be the first to know when it ready.</p>
 	</div>
 	<ul class="list mailing-list">
-		<li><strong>Twitter</strong> <a href="http://twitter.com/#!/codebrackets">@CodeBrackets<span></span></a></li>
-        <li><strong>Google+</strong> <a href="https://plus.google.com/b/115365194873502050036/">Brackets<span></span></a></li>
-        <li><strong>Brackets</strong> <a href="http://groups.google.com/group/brackets-dev">http://groups.google.com/group/codebrackets<span></span></a></li>
+		
+        <li><strong>Twitter</strong> <a href="http://twitter.com/#!/brackets"><button class="zocial twitter">Follow us @brackets</button></a></li>
+        <li><strong>Google+</strong> <a href="https://plus.google.com/b/115365194873502050036/"><button class="zocial googleplus">Add us to your circles</button></a></li>
+        <li><strong>Facebook</strong> <a href="http://www.facebook.com/CodeBrackets"><button class="zocial facebook">Lets be friends</button></a></li>
+        <li><strong>YouTube</strong> <a href="http://www.youtube.com/codebrackets"><button class="zocial googleplay">Subscribe to our channel</button></a></li>
 	</ul>
 </div>
 
-<a class="scroll-point" name="download"></a>
-
-<div class="wrap download-pane">
-    <h2 class="icon icon-download">Download</h2>
-	<p>Brackets is still in the oven and needs to bake a little longer before it's a full-featured code editor. The milestone builds available on GitHub are there for contributors
-    and those special kind of crazy developers who love to live on the edge. Performance, stability and features are all in flux. Use at your own risk.</p>
-    <p>If the current build is missing something critical, build it yourself, or vote it up on our public backlog. If you find a bug, feel free to fix it yourself or file an issue.</p>
-    <p>Remember, everytime your criticise an open source project before it's 1.0 release, a LOLcat dies.</p><br>
-	<div class="button-container">
-    	<div class="button">Latest Milestone<label></label></div>
-	</div>
-</div>
 
 <div class="wrap quick-links-pane">
     <h2 class="icon icon-quick-links">Quick Links</h2>
 	<div class="list-container quick-links">
         <div class="title">General</div>
 		<ul class="list">
-			<li><a href="#about">About Brackets<span></span></a></li>
-            <li><a href="#">License<span></span></a></li>
-            <li><a href="#">Artwork<span></span></a></li>
+            <li><a href="http://html.adobe.com">Adobe &amp; HTML</a></li>
+            <li><a href="#">Bracket Blog (coming soon)</a></li>
+            <li><a href="#">Artwork (coming soon)</a></li>
 		</ul>
     </div>
     <div class="list-container quick-links">
         <div class="title">Development</div>
 		<ul class="list">
-			<li><a href="http://github.com/adobe.com/brackets/downloads">Download<span></span></a></li>
-            <li><a href="https://github.com/adobe/brackets">Source Code<span></span></a></li>
-            <li><a href="#">License<span></span></a></li>
-            <li><a href="#mailing-list">Mailing List<span></span></a></li>
-            <li><a href="https://github.com/adobe/brackets/issues">Issue Tracker<span></span></a></li>
-            <li><a href="https://github.com/adobe/brackets/wiki">Wiki<span></span></a></li>
+			<li><a href="http://github.com/adobe.com/brackets/downloads">Downloads</a></li>
+            <li><a href="https://github.com/adobe/brackets">Source Code</a></li>
+            <li><a href="https://github.com/adobe/brackets/issues">Issue Tracker</a></li>
+            <li><a href="https://github.com/adobe/brackets/wiki">Wiki</a></li>
+            <li><a href="http://bit.ly/BracketsBacklog">Feature Backlog</a></li>
 		</ul>
 	</div>
 </div>
