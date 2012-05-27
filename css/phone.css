@@ -84,5 +84,11 @@ h2.icon {
 button.zocial
 {
     width: 175px;
-    font-size: 9px;
+    font-size: 10px;
+}
+
+/* fork us on github */
+#fork-us
+{
+    display: none;   
 }
